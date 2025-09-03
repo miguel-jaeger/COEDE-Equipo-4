@@ -1,9 +1,85 @@
-<legend>Datos de Alva</legend>
-<section>
-    <article>
-        <p>Nombre: Limber Emerson Alva Diaz</p>
-        <p>Direccion: VM Oeste Jr. Crnl Castañon</p>
-        <p>Telefono: 932027663</p>
-        <p>Correo: limberalva2001@gmail.com</p>
-    </article>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Limber Alva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .perfil-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-top: -75px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+        .contenido p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="perfil-container">
+    <header>
+        <h1>Limber Emerson Alva Diaz</h1>
+    </header>
+    <div class="contenido">
+        <img src="https://raw.githubusercontent.com/miguel-jaeger/COEDE-Equipo-4/31ff79849f84ea1d895c0ac2cb89d50ff1ea2d47/PAGES/ALVA%20DIAZ000.jpeg" alt="Foto de perfil" class="foto-perfil">
+        <p><strong>Dirección:</strong> VM Oeste Jr. Crnl Castañon</p>
+        <p><strong>Teléfono:</strong> <a class="btn" href="https://wa.me/51932027663" target="_blank">WhatsApp</a></p>
+        <p><strong>Correo:</strong> <a class="btn" href="mailto:limberalva2001@gmail.com">Enviar correo</a></p>
+
+        <!-- Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.00758382206!2d-74.25987168791306!3d40.69714942222488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM3JzUwLjAiTiA3NMKwMTUnMTQuMCJX!5e0!3m2!1ses!2spe!4v1693765291965!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
