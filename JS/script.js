@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Llamamos a la función para cada sección
     cargarContenido('pages/fernandez.html', 'fernandez');
-    cargarContenido('pages/fernandez.html', 'fernandez');
+    cargarContenido('pages/alva.html', 'alva');
     cargarContenido('pages/fernandez.html', 'fernandez');
     cargarContenido('pages/fernandez.html', 'fernandez');
     cargarContenido('pages/fernandez.html', 'fernandez');
