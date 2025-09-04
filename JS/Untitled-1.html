@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Santiago García</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 30% 70%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        /* Lado izquierdo */
+        .left-panel {
+            background: #4b6d50;
+            color: white;
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+        .name {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .title {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .contact p, .idiomas p, .habilidades p, .referencias p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        /* Lado derecho */
+        .right-panel {
+            padding: 20px;
+        }
+        .perfil, .experiencia, .educacion {
+            margin-bottom: 20px;
+        }
+        .perfil p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .experiencia h3, .educacion h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #4b6d50;
+        }
+        .experiencia p, .educacion p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel izquierdo -->
+        <div class="left-panel">
+            <img src="foto.jpg" alt="Foto Perfil" class="profile-pic">
+            <div class="name">Santiago García</div>
+            <div class="title">CONTADOR PÚBLICO</div>
+            
+            <div class="contact">
+                <div class="section-title">CONTACTO</div>
+                <p>+00 000 000 000</p>
+                <p>ejemplo@mail.es</p>
+                <p>CDMX, México</p>
+                <p>LinkedIn/ejemplo.perfil</p>
+            </div>
+            
+            <div class="idiomas">
+                <div class="section-title">IDIOMAS</div>
+                <p>Español: Nativo</p>
+                <p>Inglés: Intermedio</p>
+                <p>Alemán: Principiante</p>
+            </div>
+            
+            <div class="habilidades">
+                <div class="section-title">HABILIDADES</div>
+                <p>Trabajo en equipo</p>
+                <p>Análisis financiero</p>
+                <p>Gestión de cuentas</p>
+                <p>Elaboración de presupuestos</p>
+            </div>
+            
+            <div class="referencias">
+                <div class="section-title">REFERENCIAS</div>
+                <p>John Smith | Contador General</p>
+                <p>Empresa</p>
+                <p>Nombre.apellido@gmail.com</p>
+            </div>
+        </div>
+        
+        <!-- Panel derecho -->
+        <div class="right-panel">
+            <div class="perfil">
+                <h3>PERFIL</h3>
+                <p>Contador Público con más de 5 años de experiencia en la gestión de contabilidad general, auditoría interna y cumplimiento fiscal en empresas multinacionales. Experto en el manejo de software contable como SAP, QuickBooks y Excel avanzado. Conocimientos sólidos en Normas Internacionales.</p>
+            </div>
+            
+            <div class="experiencia">
+                <h3>EXPERIENCIA LABORAL</h3>
+                <p><strong>Contador General</strong></p>
+                <p>Finanzas Corporativas SA | Ene. 20xx – Dic. 20xx</p>
+                <ul>
+                    <li>Responsable de la preparación y presentación de estados financieros mensuales y anuales.</li>
+                    <li>Supervisión y auditoría de los procesos contables para asegurar el cumplimiento de las normativas fiscales.</li>
+                </ul>
+                
+                <p><strong>Contador General</strong></p>
+                <p>Consultores Financieros | Ene. 20xx – Jun. 20xx</p>
+                <ul>
+                    <li>Análisis y conciliación de estados financieros de clientes en diversos sectores.</li>
+                    <li>Participación en proyectos de mejora en los procesos de reportes financieros.</li>
+                </ul>
+                
+                <p><strong>Analista Contable</strong></p>
+                <p>Grupo Contable Internacional | Ene. 20xx – Jul. 20xx</p>
+                <ul>
+                    <li>Apoyo en la preparación de declaraciones fiscales mensuales y anuales.</li>
+                    <li>Asistencia en auditorías internas y externas para verificar el cumplimiento normativo fiscal.</li>
+                </ul>
+            </div>
+            
+            <div class="educacion">
+                <h3>EDUCACIÓN</h3>
+                <p><strong>Grado en Contaduría Pública</strong></p>
+                <p>Universidad Autónoma de México</p>
+                <p>Ago. 20xx – Jul. 20xx</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
