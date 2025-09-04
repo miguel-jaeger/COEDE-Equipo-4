@@ -3,78 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Equipo 4</title>
-    <script src="JS/script.js"></script>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        .contacto {
+            margin-top: 20px;
+        }
+        .contacto li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para la imagen */
+        .perfil {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Blog Equipo 4</h1>
-    <!-- Aquí va el contenido de la cabecera -->
-  </header>
 
-  <nav>
-    <!-- Aquí va el menú de navegación -->
-    <ul>
-        <li><a href="http://">Jeanpol Tapia Maravi</a></li>
-        <li><a href="http://">Limber Alva Diaz</a></li>
-        <li><a href="http://">Harold Fernandez Mamani</a></li>
-        <li><a href="http://">Milenie Lopez Perez</a></li>
-        <li><a href="http://">Jeffrie Bermejo Narvaez</a></li>
-    </ul>
-  </nav>
+    <header>
+        <h1>Bienvenido a mi página personal</h1>
+    </header>
 
-  <section>
-    <!-- Aquí va el contenido principal de cada artículo -->
-    <article id="fernandez">
-        <!-- Contenido de Fernández -->
-         <h2>Juan Fernández</h2>
-         <p>Edad: 28 años</p>
-         <p>Ocupación: Ingeniero de Software</p>
-         <p>Descripción: Juan es un ingeniero apasionado por el desarrollo web y las nuevas tecnologías. Le encanta resolver problemas complejos y aprender nuevas herramientas.</p>
-         <img src="juan_fernandez.jpg" alt="Foto de Juan Fernández" width="200">
-         </article>
-    <article id="alva">
-        <!-- Contenido de Alva -->
-    </article>
-    <article id="lopezperez">
-        <!-- Contenido de López Pérez -->
-    </article>
-    <article id="bermejo">
-        <!-- Contenido de Bermejo -->
-    </article>
-    <article id="tapia">
-        <!-- Contenido de Tapia -->
-    </article>
-  </section>
+    <section>
+        <!-- Agregar imagen de perfil -->
+        <img src="https://github.com/miguel-jaeger/COEDE-Equipo-4/blob/main/PAGES/imagenes/WhatsApp%20Image%202025-09-03%20at%2012.47.37%20PM.jpeg?raw=true" alt="Foto de Juan Pérez" class="perfil">
 
-  <main>
-    <!-- Aquí puedes agregar más detalles de cada estudiante en un <fieldset> -->
-    <fieldset id="fernandez">
-        <legend>Fernández</legend>
-        <!-- Información del Estudiante Fernández -->
-    </fieldset>
-    <fieldset id="alva">
-        <legend>Alva</legend>
-        <!-- Información del Estudiante Alva -->
-    </fieldset>
-    <fieldset id="lopezperez">
-        <legend>López Pérez</legend>
-        <!-- Información del Estudiante López Pérez -->
-    </fieldset>
-    <fieldset id="bermejo">
-        <legend>Bermejo</legend>
-        <!-- Información del Estudiante Bermejo -->
-    </fieldset>
-    <fieldset id="tapia">
-        <legend>Tapia</legend>
-        <!-- Información del Estudiante Tapia -->
-    </fieldset>
-  </main>
+        <h2>Datos Personales</h2>
+        <p><strong>Nombre:</strong> Milenie Leticia Lopez Perez</p>
+        <p><strong>Edad:</strong> 25 años</p>
+        <p><strong>Profesión:</strong> Militar</p>
+        <p><strong>Ubicación:</strong> Lima, Perú</p>
 
-  <footer>
-    <!-- Aquí va el contenido del pie de página -->
-    <p>&copy; 2025 Equipo 4</p>
-  </footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><strong>Correo Electrónico:</strong> <a href="mlopezp@esge.edu.pe">mlopezp@esge.edu.pe</a></li>
+                <li><strong>Teléfono:</strong> +52 999 888 777</li>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 </body>
 </html>
