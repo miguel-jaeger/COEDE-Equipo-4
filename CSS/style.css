@@ -1,9 +1,9 @@
-body {
+/*body {
     display: block;
-    /* O simplemente no declarar 'display' para usar el valor por defecto */
+    /* O simplemente no declarar 'display' para usar el valor por defecto 
     margin: 0;
     padding: 0;
-}
+}*/
 
 .card {
     background-color: white;
@@ -42,11 +42,8 @@ body {
 }
 
 nav {
-    background-color: #333;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-        position: fixed;
+        /* position: sticky;*/
+   top: 0;       
     width: 100%;
 }
 
@@ -88,7 +85,43 @@ section {
 }
 
 .main-header {
-   min-height: 120px; /* Asegura que el header esté por encima de otros elementos */
-      z-index: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--bs-emphasis-color);
 }
 
+.main-header a{
+    color: white;
+}
+
+.main-header a:hover{
+    color: red;
+}
+
+.main-header a:active{
+    color: blue;
+}
+
+.main-header h1 {
+    color: white;
+   background-color: var(--bs-emphasis-color) !important;
+   padding: 10px 0 20px 20px;
+   margin: 0;
+   float: left;
+}
+
+#menu
+{
+   margin: 10px 0 0 0;
+   padding: 5px;
+   float: left;
+   width: 70%;
+
+}
+
+#menu>ul>li
+{
+ 
+   padding: 10px;
+}
