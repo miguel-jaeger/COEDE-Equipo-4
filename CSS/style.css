@@ -46,6 +46,8 @@ nav {
     padding: 1rem;
     position: sticky;
     top: 0;
+        position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -83,4 +85,8 @@ section {
 
 #bibliografia {
     background-color: #f0f9f0;
+}
+
+.main-header {
+   min-height: 70px;* Asegura que el header esté por encima de otros elementos */
 }
