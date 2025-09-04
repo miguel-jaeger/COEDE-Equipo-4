@@ -14,6 +14,12 @@ siteHeader.classList.toggle('scrolled', sc > 8);
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+    // Llamamos a la función para cada sección
+    cargarContenido('pages/fernandez.html', 'fernandez');
+    cargarContenido('pages/alva.html', 'alva');
+    cargarContenido('pages/lopezpere.html', 'lopezperez');
+    cargarContenido('pages/bermejo.html', 'bermejo');
+    cargarContenido('pages/tapia.html', 'tapia');
 
 // ===== Menú responsive (toggle)
 const nav = $("nav.primary");
