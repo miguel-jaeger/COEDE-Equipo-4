@@ -1,11 +1,132 @@
-<legend>Datos de Fernandez</legend>
-<section>
-    <article>
-        <p>Nombre:</p>
-        <p>Direccion:</p>
-        <p>Telefono:</p>
-        <p>Correo:</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Harold Fernández</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f9fafb; color: #111; }
+    header { padding: 12px 16px; background: #111; color: #fff; }
+    header h1 { margin: 0; font-size: 1.4rem; }
+    main { max-width: 900px; margin: 20px auto; padding: 0 16px; }
+    article { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; }
+    .cv-header { display: flex; gap: 16px; align-items: center; }
+    .cv-foto { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 2px solid #e5e7eb; }
+    .cv-sub { margin: 4px 0 8px; color: #555; }
+    .cv-contacto { list-style: none; padding: 0; margin: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+    .cv-contacto a { color: #0077ff; text-decoration: none; }
+    .cv-acciones { margin-top: 8px; display: flex; gap: 8px; }
+    .btn { padding: 8px 12px; border-radius: 8px; border: none; cursor: pointer; }
+    .btn.cv-imprimir { background: #111; color: #fff; }
+    .btn.btn-sec { background: #f3f3f3; }
+    .cv-bloque { margin-top: 20px; }
+    .cv-bloque h3 { margin-bottom: 8px; }
+    .cv-item header { display: flex; justify-content: space-between; align-items: baseline; }
+    .cv-fecha { color: #777; font-size: 0.9rem; }
+    .cv-tags { list-style: none; padding: 0; display: flex; gap: 8px; flex-wrap: wrap; }
+    .cv-tags li { background: #eef6ff; border: 1px solid #dbeafe; padding: 6px 10px; border-radius: 999px; font-size: 0.9rem; }
+    .cv-proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .cv-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; background: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Currículum Vitae - Harold Fernández</h1>
+  </header>
+
+  <main>
+    <article id="fernandez" aria-labelledby="cv-title">
+      <header class="cv-header">
+        <img class="cv-foto" src="https://github.com/miguel-jaeger/COEDE-Equipo-4/blob/main/PAGES/imagenes/WhatsApp%20Image%202025-09-04%20at%208.23.53%20AM.jpeg?raw=true" alt="Foto de perfil de Estudiante 1" />
+        <div>
+          <h2 id="cv-title">Harold Fernández</h2>
+          <p class="cv-sub">Administrador • Gestión de proyectos • Transformación digital</p>
+          <ul class="cv-contacto">
+            <li><a href="mailto:haroldffm@hotmail.com">haroldffm@hotmail.com</a></li>
+            <li><a href="tel:+51906203204">+51 906 203 204</a></li>
+            <li><a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li>Cusco / Cusco, Perú</li>
+          </ul>
+        </div>
+      </header>
+      <div class="cv-acciones">
+        <button type="button" class="btn cv-imprimir">Descargar PDF</button>
+        <a class="btn btn-sec" href="#proyectos">Ver proyectos</a>
+      </div>
+
+      <section class="cv-bloque">
+        <h3>Perfil</h3>
+        <p>
+          Administrador con enfoque en operaciones y producto. Lidero equipos, optimizo procesos
+          con datos y automatizaciones (n8n, APIs) y ejecuto proyectos end-to-end con resultados
+          medibles en tiempo y costo.
+        </p>
+      </section>
+
+      <section class="cv-bloque">
+        <h3>Experiencia</h3>
+        <article class="cv-item">
+          <header>
+            <strong>Gerente de Operaciones</strong> — Elite Cuts
+            <span class="cv-fecha">2023 — Actualidad</span>
+          </header>
+          <ul>
+            <li>Implementé POS y dashboard en tiempo real (ventas, caja, cocina).</li>
+            <li>Reduje tiempos de atención en 22% con flujos y capacitaciones.</li>
+            <li>Lanzamiento de dos locales y estandarización de servicios.</li>
+          </ul>
+        </article>
+        <article class="cv-item">
+          <header>
+            <strong>Consultor de Transformación Digital</strong> — SEDI.pe
+            <span class="cv-fecha">2022 — 2023</span>
+          </header>
+          <ul>
+            <li>Integraciones con SUNAT, WhatsApp Business API y n8n.</li>
+            <li>Automatización de facturación y reportes financieros.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-bloque">
+        <h3>Educación</h3>
+        <ul>
+          <li><strong>Administración</strong> — Universidad X (2018 — 2022)</li>
+          <li>Certificaciones: Scrum Fundamentals, Power BI, SQL Básico</li>
+        </ul>
+      </section>
+
+      <section class="cv-bloque">
+        <h3>Habilidades</h3>
+        <ul class="cv-tags">
+          <li>Operaciones</li><li>Gestión de equipos</li><li>Excel/Power BI</li>
+          <li>SQL/MySQL</li><li>n8n</li><li>APIs</li><li>Atención al cliente</li>
+        </ul>
+      </section>
+
+      <section id="proyectos" class="cv-bloque">
+        <h3>Proyectos destacados</h3>
+        <div class="cv-proyectos">
+          <div class="cv-card">
+            <h4>Dashboard Cocina & POS</h4>
+            <p>Panel en vivo para pedidos, tiempos de espera y caja.</p>
+            <ul>
+              <li>Reducción de TME en 15–25%.</li>
+              <li>Alertas en tiempo real vía Socket.IO.</li>
+            </ul>
+          </div>
+          <div class="cv-card">
+            <h4>Automatización SUNAT</h4>
+            <p>Flujos n8n para facturas, boletas y anulaciones.</p>
+            <ul>
+              <li>Disminución de errores manuales en 90%.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </article>
+<<<<<<< HEAD
 </section>
 
 <style>
@@ -13,3 +134,17 @@
         color:red;
     }
 </style>
+=======
+  </main>
+
+  <script>
+    // Botón de imprimir/guardar como PDF
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".cv-imprimir");
+      if (!btn) return;
+      window.print();
+    });
+  </script>
+</body>
+</html>
+>>>>>>> d929f994975be7c70282b201a322f10802c692aa

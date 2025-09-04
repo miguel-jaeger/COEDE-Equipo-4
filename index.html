@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Equipo 4</title>
-   <script src="JS/script.js"></script>
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Equipo 4</title>
+  <!-- Archivos externos -->
+  <script src="JS/script.js" defer></script>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+    body { margin: 0; }
+    header { padding: 12px 16px; background: #111; color: #fff; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.2rem; margin: 0; font-weight: 600; }
+    nav { background: #f3f3f3; border-bottom: 1px solid #e5e5e5; }
+    nav ul { margin: 0; padding: 8px 16px; list-style: none; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: #222; font-weight: 600; }
+    nav a:hover { color: #0077ff; }
+    main { max-width: 1000px; margin: 20px auto; padding: 0 16px; }
+    section#estudiantes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    article { border: 1px solid #e5e5e5; border-radius: 10px; padding: 16px; background: #fff; }
+    article h2 { margin-top: 0; font-size: 1.1rem; }
+    footer { margin-top: 40px; padding: 16px; text-align: center; color: #666; border-top: 1px solid #e5e5e5; }
+
+    /* Menú responsive */
+    .menu-toggle { display: none; font-size: 1.4rem; cursor: pointer; }
+    @media (max-width: 768px) {
+      nav ul { display: none; flex-direction: column; padding: 16px; }
+      nav ul.active { display: flex; }
+      .menu-toggle { display: block; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    contenido de la cabecera
-     <nav>aca va el menu
-      <ul>
-        <li><a href="http://"></a>Estudiante 1</li>
-        <li><a href="#alva">Alva 2</a></li>
-        <li><a href="http://"></a>Estudiante 3</li>
-        <li><a href="http://"></a>Estudiante 4</li>
-        <li><a href="http://"></a>Estudiante 5</li>
-      </ul>
-    </nav>
-  </header>
-   
-    <section>
-      <article id="fernandez"></article>
-      <article id="alva"></article>
-      <article id="lopezperez"></article>
-      <article id="bermejo"></article>
-      <article id="tapia"></article>
+  <header class="site-header">
+<span class="brand">Blog Equipo 4</span>
+<span class="spacer"></span>
+<button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+</header>
+<nav class="primary" id="menu" aria-label="Menú principal">
+    <ul>
+      <li><a href="pages/fernandez.html">Estudiante 1</a></li>
+      <li><a href="pages/alva.html">Estudiante 2</a></li>
+      <li><a href="pages/lopezperez.html">Estudiante 3</a></li>
+      <li><a href="pages/bermejo.html">Estudiante 4</a></li>
+      <li><a href="pages/tapia.html">Estudiante 5</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="estudiantes" aria-label="Entradas del blog por estudiante">
+      <article id="fernandez">
+        <h2>Estudiante 1</h2>
+        <p>Contenido de la publicación del Estudiante 1…</p>
+      </article>
+
+      <article id="alva">
+        <h2>Estudiante 2</h2>
+        <p>Contenido de la publicación del Estudiante 2…</p>
+      </article>
+
+      <article id="lopezperez">
+        <h2>Estudiante 3</h2>
+        <p>Contenido de la publicación del Estudiante 3…</p>
+      </article>
+
+      <article id="bermejo">
+        <h2>Estudiante 4</h2>
+        <p>Contenido de la publicación del Estudiante 4…</p>
+      </article>
+
+      <article id="tapia">
+        <h2>Estudiante 5</h2>
+        <p>Contenido de la publicación del Estudiante 5…</p>
+      </article>
     </section>
-   
-    <footer>
-        contenido del footer
-    </footer>
+  </main>
+
+  <footer>
+    &copy; 2025 Equipo 4. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // script.js base en línea (puedes moverlo a JS/script.js)
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector("nav ul");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
