@@ -88,5 +88,5 @@ section {
 }
 
 .main-header {
-   min-height: 70px;* Asegura que el header esté por encima de otros elementos */
+   min-height: 80px;* Asegura que el header esté por encima de otros elementos */
 }
