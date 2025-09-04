@@ -1,142 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Profesional - Limber Alva</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Fondo oscuro */
-            color: #ffffff; /* Texto blanco */
-            margin: 0;
-            padding: 0;
-        }
-        .perfil-container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #1c1c1c; /* Tarjeta oscura */
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(255,255,255,0.05);
-            overflow: hidden;
-        }
-        header {
-            background-color: #000000; /* Encabezado negro */
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-        .foto-perfil {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ffffff;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(255,255,255,0.2);
-        }
-        .contenido {
-            padding: 20px;
-            text-align: center;
-        }
-        .contenido p {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #f1f1f1; /* Gris claro */
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            background-color: #ffffff;
-            color: #000000;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background-color: #000000;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-        }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-        form {
-            margin: 20px 0;
-            text-align: left;
-            padding: 0 20px;
-        }
-        form label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-            color: #f1f1f1;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #444;
-            border-radius: 6px;
-            font-size: 16px;
-            background: #2a2a2a;
-            color: #fff;
-        }
-        form input[type="file"] {
-            padding: 5px;
-        }
-        form button {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        form button:hover {
-            background-color: #000000;
-            color: #ffffff;
-            border: 1px solid #fff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>CV - LIMBER EMERSON ALVA DIAZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <style>
+    /* Efecto hover en habilidades */
+    .badge:hover {
+      transform: scale(1.2);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-light">
 
-<div class="perfil-container">
-    <header>
-        <h1>Limber Emerson Alva Diaz</h1>
-        <img src="https://github.com/miguel-jaeger/COEDE-Equipo-4/blob/main/PAGES/imagenes/ALVA%20DIAZ000.jpeg?raw=true" alt="Foto de perfil" class="foto-perfil">
-    </header>
-    <div class="contenido">
-        <p><strong>Teléfono:</strong> <a class="btn" href="https://wa.me/51932027663" target="_blank">WhatsApp: 932027663</a></p>
-        <p><strong>Correo:</strong> <a class="btn" href="mailto:limberalva2001@gmail.com">limberalva2001@gmail.com</a></p>
+  <div class="container py-5 d-flex justify-content-center">
+    <!-- Card principal estilo hoja -->
+    <div class="card shadow-lg border-0 rounded-4 p-4 bg-dark text-white animate__animated animate__fadeIn" 
+         style="max-width: 900px; width: 100%;">
+      
+      <!-- Encabezado -->
+      <div class="text-center mb-4 animate__animated animate__fadeInDown">
+        <img src="https://github.com/miguel-jaeger/COEDE-Equipo-4/blob/main/PAGES/imagenes/ALVA%20DIAZ000.jpeg?raw=true" alt="Foto de Jeanpol Tapia Maravi" 
+             class="rounded-circle mb-3 shadow" width="150" height="150">
+        <h1 class="text-info fw-bold">LIMBER EMERSON ALVA DIAZ</h1>
+        <p class="mb-1"><i class="bi bi-telephone-fill text-success"></i> <strong>Tel:</strong> 932027663</p>
+        <p class="mb-1"><i class="bi bi-envelope-fill text-danger"></i> <strong>Email:</strong> limberalva2001@gmail.com</p>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Ciudad:</strong> Chorrillos, Lima, Perú</p>
+        <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#mapModal">
+          <i class="bi bi-map"></i> Ver Ubicación
+        </button>
+      </div>
 
-        <!-- Formulario para enviar mensaje y archivo -->
-        <form action="mailto:limberalva2001@gmail.com" method="post" enctype="multipart/form-data">
-            <label for="mensaje">Escribe tu mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <!-- Accordion -->
+      <div class="accordion shadow-sm animate__animated animate__fadeInUp" id="cvAccordion">
+        
+        <!-- Perfil -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingPerfil">
+            <button class="accordion-button bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerfil" aria-expanded="true">
+              Perfil Profesional
+            </button>
+          </h2>
+          <div id="collapsePerfil" class="accordion-collapse collapse show" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              Soy Oficial del Ejército del Perú del arma de comunicaciones. 
+              ¡No desesperes! La vida te sorprenderá cuando menos te lo esperes.
+            </div>
+          </div>
+        </div>
 
-            <label for="archivo">Adjuntar archivo:</label>
-            <input type="file" id="archivo" name="archivo">
+        <!-- Experiencia -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingExp">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp">
+              Experiencia Laboral
+            </button>
+          </h2>
+          <div id="collapseExp" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              <ul>
+                <strong>Cargo:</strong> OO DE COMUNICACIONES <br>
+                    <strong>Unidad:</strong> ESCUELA DE COMUNICACIONES <br>
+                    <strong>Fechas:</strong> JULIO 2025 - DICIEMBRE 2025 <br>
+                    <strong>Cargo:</strong> ALUMNO OPER CIBER <br>
+                    <strong>Unidad:</strong> COEDE <br>
+                    <strong>Fechas:</strong> JUL25 - DIC25 <br>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <button type="submit">Enviar</button>
-        </form>
+        <!-- Educación -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingEdu">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdu">
+              Educación
+            </button>
+          </h2>
+          <div id="collapseEdu" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              <p><strong>Colegio:</strong> COAR AMAZONAS </p>
+              <p><strong>Universidad:</strong> Escuela Militar de Chorrillos "CFB"</p>
+              <p><strong>Carrera:</strong> OFICIAL DEL ARMA DE COMUNICACIONES </p>
+            </div>
+          </div>
+        </div>
 
-        <p><strong>Dirección:</strong> <a class="btn" href="https://maps.app.goo.gl/EXbDggoat9q6hhzF8" target="_blank">Villa Militar Oeste Jr. Crnl Castañon N°216</a></p>
+        <!-- Habilidades -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingHab">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHab">
+              Habilidades
+            </button>
+          </h2>
+          <div id="collapseHab" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              <span class="badge bg-primary animate__animated animate__bounceIn">HTML</span>
+              <span class="badge bg-secondary animate__animated animate__bounceIn animate__delay-1s">CSS</span>
+              <span class="badge bg-info animate__animated animate__bounceIn animate__delay-2s">Diseño Grafico</span>
+              <span class="badge bg-success animate__animated animate__bounceIn animate__delay-3s">Microsoft Office</span>
+              <span class="badge bg-warning text-dark animate__animated animate__bounceIn animate__delay-4s">Administración de negocios</span>
+              <span class="badge bg-dark animate__animated animate__bounceIn animate__delay-5s">Gestión de equipos</span>
+              <span class="badge bg-dark animate__animated animate__bounceIn animate__delay-5s">Artes visuales</span>
+              <span class="badge bg-dark animate__animated animate__bounceIn animate__delay-5s">Diseño de interiores</span>
+            </div>
+          </div>
+        </div>
 
-        <!-- Google Maps ubicación correcta -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.7866205175651!2d-77.04481612103216!3d-12.028167187720977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91e2be2d23f%3A0x2c11b92f8dbbe65e!2sVilla%20Militar%20Oeste%2C%20Jr.%20Crnl%20Casta%C3%B1on%20216%2C%20Lima!5e0!3m2!1ses!2spe!4v1693765291965!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
+        <!-- Idiomas -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingIdiomas">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIdiomas">
+              Idiomas
+            </button>
+          </h2>
+          <div id="collapseIdiomas" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Español (Nativo)</li>
+                <li>Inglés (Intermedio)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyectos -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="headingProyectos">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProyectos">
+              Proyectos y Logros
+            </button>
+          </h2>
+          <div id="collapseProyectos" class="accordion-collapse collapse" data-bs-parent="#cvAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Venta de zapatillas originales de la marca reconocidas en mi tienta LEAD Sneakers Store.</li>
+                <li>Creacion y edicion de videos con LEAD Loock.</li>
+                <li>Dj de eventos con Dj LEAD.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <p class="text-muted">© 2025 - CV de LIMBER EMERSON ALVA DIAZ</p>
+      </footer>
     </div>
-</div>
+  </div>
 
+  <!-- Modal con Google Maps -->
+  <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mapModalLabel">Mi Ubicación - Chorrillos,Lima, Perú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.744614872753!2d-77.0428!3d-12.0464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c0b4c9d6f1%3A0xd1b07f3b0c6b4c0!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
