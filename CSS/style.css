@@ -36,7 +36,7 @@
 }
 
 .card p {
-    color: #777;
+    color: #ffff;
     font-size: 1em;
     margin-top: 8px;
 }
@@ -87,7 +87,7 @@ section {
 .main-header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
     background-color: var(--bs-emphasis-color);
 }
 
@@ -124,4 +124,8 @@ section {
 {
  
    padding: 10px;
+}
+
+section {
+    padding-top: 120px; /* Ajusta según la altura del menú fijo */
 }
